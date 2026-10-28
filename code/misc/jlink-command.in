@@ -1,0 +1,4 @@
+erase @APP_FLASH_START@ @APP_FLASH_END@
+loadfile @HEX_FILE@ 0 noreset
+reset
+exit

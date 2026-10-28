@@ -1,0 +1,59 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "J-Link (Cortex Debug)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/code/build/badger.elf",
+            "armToolchainPath": "",
+            "device": "PY32F071xB",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 1
+            },
+            "interface": "swd",
+            "serialNumber": "",
+            "runToEntryPoint": "main",
+            "postRestartCommands": [],
+            "postResetCommands": [],
+            "svdFile": "${workspaceFolder}/.vscode/py32f071xx.svd",
+            "showDevDebugOutput": "parsed"
+        },
+        {
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "probe_rs",
+            "cwd": "${workspaceFolder}",
+            "speed": 4000,
+            "runtimeExecutable": "probe-rs",
+            "runtimeArgs": [
+                "dap-server"
+            ],
+            "chip": "PY32F071xB",
+            "flashingConfig": {
+                "flashingEnabled": true,
+                "haltAfterReset": false,
+                "formatOptions": {
+                    "binaryFormat": "elf"
+                }
+            },
+            "coreConfigs": [
+                {
+                    "coreIndex": 0,
+                    "programBinary": "${workspaceFolder}/code/build/badger.elf",
+                    "svdFile": "${workspaceFolder}/.vscode/py32f071xx.svd"
+                }
+            ],
+            "env": {
+                //!MODIFY (or remove)
+                // If you set this variable, check the VSCode console log window for the location of the log file.
+                "RUST_LOG": "info"
+            },
+            // Info, Debug
+            "consoleLogLevel": "Console"
+        }
+    ]
+}

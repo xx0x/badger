@@ -1,0 +1,240 @@
+(footprint "SW_SPST_Omron_B3F-40xx_CENTER"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SW_THT_Tactile_Omron_B3F-40xx, 12x12 mm, Through hole switch from the B3F Family manufactured by Omron,  https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
+	(tags "tactile switch THT button push B3F-4000 B3F-4050 B3F-4005 B3F-4055  ")
+	(property "Reference" "REF**"
+		(at 0 -8.3 0)
+		(layer "F.SilkS")
+		(uuid "c2c2f696-c7e1-467e-975a-adae2df71119")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_SPST_Omron_B3F-40xx_CENTER"
+		(at 0 8.3 0)
+		(layer "F.Fab")
+		(uuid "b2f75cb0-59c1-4362-bf2d-2d4a2aa8aef1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd67299b-8f37-40f3-95b4-22de6e36dac9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c9e53e3-b2f1-4ca5-990d-4a35f9e8345f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.11 -6.11)
+		(end -6.11 -3.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "59bb9584-e164-4119-ae3c-b8c476f9e1bb")
+	)
+	(fp_line
+		(start -6.11 -6.11)
+		(end 6.11 -6.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9033682f-f319-4009-8124-94858abf8338")
+	)
+	(fp_line
+		(start -6.11 -1.3)
+		(end -6.11 1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ce27fc6c-9148-47a8-b402-89ff5759449c")
+	)
+	(fp_line
+		(start -6.11 3.6)
+		(end -6.11 6.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c2131bea-4580-49ad-9575-50760e180891")
+	)
+	(fp_line
+		(start 6.11 -6.11)
+		(end 6.11 -3.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6a3d7fb2-7f1f-494b-989e-9d57c581e231")
+	)
+	(fp_line
+		(start 6.11 -1.3)
+		(end 6.11 1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bde7bc08-b3b1-4640-a794-f42498434810")
+	)
+	(fp_line
+		(start 6.11 3.6)
+		(end 6.11 6.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cb09f71b-3481-4683-8b35-069a86898d9f")
+	)
+	(fp_line
+		(start 6.11 6.11)
+		(end -6.11 6.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7af977f8-c8ff-4436-b61f-49e01b98d0ba")
+	)
+	(fp_rect
+		(start -7.75 -7.25)
+		(end 7.75 7.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5e1927c4-dabe-4fe0-85da-4d10c8e74c3d")
+	)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "56d7120e-353c-49a7-8537-4a44b33bbdcc")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "93741ead-0e13-4274-99aa-4d812d0805fc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "bb5589cb-91a7-493c-a473-e40de11c21a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -4.5)
+		(size 1.8 1.8)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "7006907a-adff-4fbf-b585-184f47d56ac6")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 4.5)
+		(size 1.8 1.8)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(uuid "2b80fdfb-89b3-4931-80b4-92f7b1d356ec")
+	)
+	(pad "1" thru_hole oval
+		(at -6.25 -2.5)
+		(size 2.9 1.7)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "557c49d1-254e-4cb5-a24d-95f43f4d74ee")
+	)
+	(pad "1" thru_hole oval
+		(at 6.25 -2.5)
+		(size 2.9 1.7)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5ba77a0c-3743-465a-a515-354dbbfa011b")
+	)
+	(pad "2" thru_hole oval
+		(at -6.25 2.5)
+		(size 2.9 1.7)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "099059f0-e13c-4493-8422-0c6fd456f7d3")
+	)
+	(pad "2" thru_hole oval
+		(at 6.25 2.5)
+		(size 2.9 1.7)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c6a3609e-5d61-4857-8e83-782bb0cdc467")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d_models/B3F_4000.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

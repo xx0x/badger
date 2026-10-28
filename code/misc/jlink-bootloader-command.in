@@ -1,0 +1,4 @@
+erase
+loadfile @BOOTLOADER_HEX_FILE@ 0 noreset
+reset
+exit

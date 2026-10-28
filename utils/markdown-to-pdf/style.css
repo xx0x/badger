@@ -1,0 +1,71 @@
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
+@font-face {
+    font-family: "Miranda Sans";
+    src: url("https://raw.githubusercontent.com/google/fonts/main/ofl/mirandasans/MirandaSans%5Bwght%5D.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Miranda Sans";
+    src: url("https://raw.githubusercontent.com/google/fonts/main/ofl/mirandasans/MirandaSans-Italic%5Bwght%5D.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Noto Color Emoji";
+    src: url("https://raw.githubusercontent.com/google/fonts/main/ofl/notocoloremoji/NotoColorEmoji-Regular.ttf");
+}
+
+body {
+    font-family: "Miranda Sans", "Noto Color Emoji", sans-serif;
+    line-height: 1.35;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: auto !important;
+}
+
+col {
+    width: auto !important;
+}
+
+table td,
+table th {
+    padding: 0.25em;
+    border: 1px solid #d1d9e0;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+table img {
+    vertical-align: middle;
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+    vertical-align: middle;
+}
+
+table th,
+table td:has(img) {
+    white-space: nowrap;
+}

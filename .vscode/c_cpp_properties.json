@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/code/src",
+                "${workspaceFolder}/code/lib/CMSIS/Core/Include",
+                "${workspaceFolder}/code/lib/CMSIS/Device/PY32F071/Include",
+                "${workspaceFolder}/code/lib/PY32F071_HAL_Driver/Inc"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "PY32F071xB"
+            ],
+            "compileCommands": "${workspaceFolder}/code/build/compile_commands.json",
+            "compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "Mac (Intel)",
+            "includePath": [
+                "${workspaceFolder}/code/src",
+                "${workspaceFolder}/code/lib/CMSIS/Core/Include",
+                "${workspaceFolder}/code/lib/CMSIS/Device/PY32F071/Include",
+                "${workspaceFolder}/code/lib/PY32F071_HAL_Driver/Inc"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "PY32F071xB"
+            ],
+            "compileCommands": "${workspaceFolder}/code/build/compile_commands.json",
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "Universal",
+            "includePath": [
+                "${workspaceFolder}/code/src",
+                "${workspaceFolder}/code/lib/CMSIS/Core/Include",
+                "${workspaceFolder}/code/lib/CMSIS/Device/PY32F071/Include",
+                "${workspaceFolder}/code/lib/PY32F071_HAL_Driver/Inc"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "PY32F071xB"
+            ],
+            "compileCommands": "${workspaceFolder}/code/build/compile_commands.json",
+            "compilerPath": "arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

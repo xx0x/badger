@@ -1,0 +1,97 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "configure",
+      "type": "shell",
+      "command": "rm -rf build && cmake -S . -B build",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "rm -rf build",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "cmake --build build",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "build_and_flash_jlink",
+      "type": "shell",
+      "command": "cmake --build build --target flash-jlink",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "build_and_flash_probe_rs",
+      "type": "shell",
+      "command": "cmake --build build --target flash-probe-rs",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "upload_uf2",
+      "type": "shell",
+      "command": "cmake --build build --target upload-uf2",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "build_and_upload_uf2",
+      "dependsOn": [
+        "build",
+        "upload_uf2"
+      ],
+      "dependsOrder": "sequence"
+    },
+    {
+      "label": "flash_bootloader_jlink",
+      "type": "shell",
+      "command": "cmake --build build --target flash-bootloader-jlink",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "flash_bootloader_probe_rs",
+      "type": "shell",
+      "command": "cmake --build build --target flash-bootloader-probe-rs",
+      "options": {
+        "cwd": "${workspaceFolder}/code"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "manual_to_pdf",
+      "type": "shell",
+      "command": "pandoc MANUAL.md --pdf-engine=weasyprint -o MANUAL.pdf --css=utils/markdown-to-pdf/style.css",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ]
+}
