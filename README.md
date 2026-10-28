@@ -12,8 +12,10 @@ See [badger-full-manual-en.md](./manuals/badger-full-manual-en.md) or [badger-fu
 
 - PY32F071C1BU6TR ARM Cortex M0+
 - 48 MHz clock speed
-- 16 kB RAM, 128 kB ROM
+- 16 kB RAM, 128 kB FLASH
+- 256 B EEPROM to store settings
 - MIDI in, MIDI out (TRS Jack, Type A)
+- USB MIDI
 - Stereo audio out using a 12-bit DAC
 - Headphone amplifier with 200mW per channel at 32Ω load
 - Patch points for analog clock in and out
