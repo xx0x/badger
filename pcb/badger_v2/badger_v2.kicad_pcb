@@ -20897,7 +20897,7 @@
 				)
 			)
 		)
-		(property "Value" "33 (250mW)"
+		(property "Value" "10 (250mW)"
 			(at 0 1.65 6.8)
 			(layer "F.Fab")
 			(uuid "aa1629a9-ebde-46c2-b038-55044a2a5026")

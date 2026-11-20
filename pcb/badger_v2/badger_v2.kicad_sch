@@ -19278,7 +19278,7 @@
 				)
 			)
 		)
-		(property "Value" "33 (250mW)"
+		(property "Value" "10 (250mW)"
 			(at 199.136 147.828 90)
 			(show_name no)
 			(do_not_autoplace no)
