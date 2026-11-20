@@ -10469,12 +10469,6 @@
 		(uuid "eee1cbf9-6c29-4857-85b0-fdb684a496ee")
 	)
 	(junction
-		(at 168.91 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f04faa9a-afe7-49bf-8cef-43280f167432")
-	)
-	(junction
 		(at 148.59 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10826,7 +10820,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 68.58) (xy 168.91 68.58)
+			(xy 167.64 68.58) (xy 179.07 68.58)
 		)
 		(stroke
 			(width 0)
@@ -11083,16 +11077,6 @@
 			(type default)
 		)
 		(uuid "29bc98d9-2c4e-4ff2-83a8-b8b75032731c")
-	)
-	(wire
-		(pts
-			(xy 167.64 76.2) (xy 168.91 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a3b3ced-2e6c-4bb1-96c8-103c52c7d2ae")
 	)
 	(wire
 		(pts
@@ -11653,16 +11637,6 @@
 			(type default)
 		)
 		(uuid "5a26ed9e-9020-4f6f-a294-a81865053e44")
-	)
-	(wire
-		(pts
-			(xy 153.67 76.2) (xy 160.02 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a687bc5-d677-4292-b796-669723f38656")
 	)
 	(wire
 		(pts
@@ -12526,16 +12500,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 68.58) (xy 168.91 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afb7025a-61ce-4901-aed6-d85f185fd923")
-	)
-	(wire
-		(pts
 			(xy 274.32 182.88) (xy 256.54 182.88)
 		)
 		(stroke
@@ -12863,16 +12827,6 @@
 			(type default)
 		)
 		(uuid "c5cdb79e-ed01-4309-afd8-5bc16b5a7051")
-	)
-	(wire
-		(pts
-			(xy 168.91 68.58) (xy 179.07 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7b289c5-35d9-4e26-8a6d-56820faceaa7")
 	)
 	(wire
 		(pts
@@ -23732,84 +23686,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 153.67 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b9f6139-6fc9-4635-b6c8-8988f584fb77")
-		(property "Reference" "#PWR012"
-			(at 153.67 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 153.67 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 153.67 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e08894b8-593d-4549-8ea2-c80040367802")
-		)
-		(instances
-			(project "badger_v2"
-				(path "/efdc5b4b-c21b-488c-a24d-34d6ef2a09b2"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 335.28 148.59 0)
 		(unit 1)
@@ -28393,85 +28269,6 @@
 			(project "badger_v2"
 				(path "/efdc5b4b-c21b-488c-a24d-34d6ef2a09b2"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 163.83 76.2 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "cddc6b48-f422-4e91-a98b-07128face72d")
-		(property "Reference" "R21"
-			(at 162.052 78.486 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.5k"
-			(at 166.878 78.486 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 163.83 74.422 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 163.83 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7043fe5f-8373-4eaa-a6a2-633071abf441")
-		)
-		(pin "2"
-			(uuid "b7f805f5-1fab-49e6-8b07-bfd7b420958d")
-		)
-		(instances
-			(project "badger_v2"
-				(path "/efdc5b4b-c21b-488c-a24d-34d6ef2a09b2"
-					(reference "R21")
 					(unit 1)
 				)
 			)
